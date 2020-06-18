@@ -1,0 +1,33 @@
+*{
+	box-sizing: border-box;
+}
+
+li, ol {
+    list-style: none;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.text-sm {
+    font-size: $font-size-sm;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    border-color: #CDDDCD;
+}
+
+.main {
+    width: 100%;
+    margin-left: 296px;
+}

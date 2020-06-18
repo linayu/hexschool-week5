@@ -1,0 +1,205 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<main class="main p-32">
+    <header class="d-flex justify-content-between align-items-center mb-40">
+        <div class="d-flex align-items-center">
+            <!-- title -->
+            <h2 class="mr-46">Admin</h2>
+
+            <!-- Add New Admin -->
+            <button type="button" class="btn p-0 font-weight-bold d-flex align-items-center" data-toggle="modal" data-target="#exampleModalCenter">
+                <span class="material-icons text-secondary mr-1">add</span>Add New Admin
+            </button>
+        </div>
+
+        <!-- icon -->
+        <div>
+            <span class="material-icons mr-26">search</span>
+            <span class="material-icons">notifications_active</span>
+        </div>
+
+    </header>
+    <div class="admin">
+        <table class="table table-hover mb-12 border-bottom">
+            <thead>
+                <tr>
+                    <th scope="col" class="pl-0">
+                        ID<span class="material-icons text-secondary ml-1">arrow_downward</span>
+                    </th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Verified</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <th scope="row" class="pl-0">#1</th>
+                    <td>Emir Wicks</td>
+                    <td>emir.wicks@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#2</th>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#3</th>
+                    <td>Mahima Lopez</td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#4</th>
+                    <td>Pharrell Murray</td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#5</th>
+                    <td>Annika Mcbride</td>
+                    <td>annika.mcbride@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#6</th>
+                    <td>Fatimah Clark</td>
+                    <td>fatimah.clark@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#7</th>
+                    <td>Klaudia Rhodes</td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#8</th>
+                    <td>Tillie Lucero</td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#9</th>
+                    <td>Sabrina Stephenson</td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-0">#10</th>
+                    <td>Annie Smith</td>
+                    <td>annie.smith@mail.com</td>
+                    <td>Yes</td>
+                    <td class="pl-0 pr-0 text-right">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#viewAdmin">
+                            <span class="material-icons align-bottom">visibility</span>
+                        </button>
+                        <button type="button" class="btn p-0 ml-4" data-toggle="modal" data-target="#editAdmin">
+                            <span class="material-icons align-bottom">edit</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="text-secondary">&lt;</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true" class="text-secondary">&gt;</span>
+                    </a>
+                </li>
+            </ul>
+          </nav>
+      </div>
+
+
+</main>

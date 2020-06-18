@@ -1,0 +1,66 @@
+.wrap {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: $primary;
+    width: 296px;
+
+    h1 {
+        margin-bottom: 32px;
+    }
+}
+
+.nav {
+    .material-icons {
+        vertical-align: middle;
+        margin-right: 16px;
+    }
+
+    .nav-item {
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 29px;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    a {
+        font-weight: 700;
+        line-height: 1.5;
+        color: $dark;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .active {
+        color: $secondary;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -32px;
+            width: 4px;
+            height: 32px;
+            background: $secondary;
+        }
+    }
+
+    
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
